@@ -3,10 +3,9 @@ echo 'karli.rrze.uni-erlangen.de,131.188.16.138 ecdsa-sha2-nistp256 AAAAE2VjZHNh
 # check against known public key
 # as per https://docs.travis-ci.com/user/ssh-known-hosts/
 
-openssl aes-256-cbc -K $encrypted_4f4c68a93cef_key -iv $encrypted_4f4c68a93cef_iv -in karli_rsa.enc -out $HOME/.ssh/karli_rsa -d
 eval "$(ssh-agent -s)"
-chmod 600 $HOME/.ssh/karli_rsa
-ssh-add $HOME/.ssh/karli_rsa
+chmod 600 /tmp/karli_rsa
+ssh-add /tmp/karli_rsa
 # auth etc.
 # as per https://docs.travis-ci.com/user/ssh-known-hosts/
 
