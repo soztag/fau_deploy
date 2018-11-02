@@ -8,4 +8,5 @@ ssh-add /tmp/karli_rsa
 # auth etc.
 # as per https://docs.travis-ci.com/user/ssh-known-hosts/
 
-rsync -r --delete-after --quiet _site/ pfs400wm@karli.rrze.uni-erlangen.de:/proj/websource/docs/FAU/fakultaet/phil/www.datascience.phil.fau.de/websource/fau_deploy
+JUST_GH_REPONAME=`echo "owner_name/repo_name" | sed 's:.*/::'`
+rsync -r --delete-after --quiet _site/ pfs400wm@karli.rrze.uni-erlangen.de:/proj/websource/docs/FAU/fakultaet/phil/www.datascience.phil.fau.de/websource/$JUST_GH_REPONAME
