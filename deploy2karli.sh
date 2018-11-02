@@ -1,5 +1,4 @@
-echo 'karli.rrze.uni-erlangen.de,131.188.16.138 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFHJVSekYKuF5pMKyHe1jS9mUkXMWoqNQe0TTs2sY1OQj379e6eqVSqGZe+9dKWzL5MRFpIiySRKgvxuHhaPQU4='
-  >> $HOME/.ssh/known_hosts
+echo 'karli.rrze.uni-erlangen.de,131.188.16.138 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFHJVSekYKuF5pMKyHe1jS9mUkXMWoqNQe0TTs2sY1OQj379e6eqVSqGZe+9dKWzL5MRFpIiySRKgvxuHhaPQU4=' >> $HOME/.ssh/known_hosts
 # check against known public key
 # as per https://docs.travis-ci.com/user/ssh-known-hosts/
 
