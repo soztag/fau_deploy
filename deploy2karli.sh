@@ -10,4 +10,4 @@ ssh-add /tmp/karli_rsa
 # as per https://docs.travis-ci.com/user/ssh-known-hosts/
 
 JUST_GH_REPONAME=`echo $TRAVIS_REPO_SLUG | sed 's:.*/::'`
-rsync -r --delete-after --quiet $STATIC pfs400wm@karli.rrze.uni-erlangen.de:/proj/websource/docs/FAU/fakultaet/phil/www.datascience.phil.fau.de/websource/$JUST_GH_REPONAME
+rsync -r --delete-after --quiet $STATIC pfs400wm@karli.rrze.uni-erlangen.de:/proj/websource/docs/FAU/fakultaet/phil/www.datascience.phil.fau.de/websource/
